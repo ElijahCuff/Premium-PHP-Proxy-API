@@ -10,7 +10,7 @@ header("Content-Type: application/json; charset=UTF-8");
 $proxy = getRandomProxy();
 if (hasParam('proxy'))
 {
-$proxy = $_GET['proxy'];
+$proxy = urlDecode($_GET['proxy']);
 }
 
 if (!hasParam('url'))
