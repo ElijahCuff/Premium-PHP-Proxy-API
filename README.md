@@ -2,7 +2,7 @@
 PHP Proxy Loader Backend, Takes a given URL and returns the DATA through a predefined Premium proxy list.   
    
 ### Installation   
-* Download 3 Files (proxyloade.php,agents.list,proxy.list)    
+* Download 3 Files (proxyload.php,agents.list,proxy.list)    
 * Place All Files On PHP Server that supports CURL    
 
 
