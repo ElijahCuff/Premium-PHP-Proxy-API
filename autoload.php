@@ -40,7 +40,7 @@ function getRandomAgent()
 {
 if (hasParam('agent'))
 {
-  return $_GET['agent'];
+  return urlDecode($_GET['agent']);
 }
 else
 {
@@ -58,13 +58,13 @@ curl_setopt($ch, CURLOPT_URL, $url);
 $ref = "http://google.com";
 if (hasParam('referer'))
 {
-$ref = $_GET['referer'];
+$ref = urlDecode($_GET['referer']);
 }
 
 curl_setopt($ch, CURLOPT_REFERER, $ref);
 curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1);
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-curl_setopt($ch, CURLOPT_TIMEOUT_MS, 5000);
+curl_setopt($ch, CURLOPT_TIMEOUT_MS, 2500);
 curl_setopt($ch, CURLOPT_USERAGENT,  $agent);
 curl_setopt($ch, CURLOPT_HEADER, 0);
 $page = curl_exec($ch);
