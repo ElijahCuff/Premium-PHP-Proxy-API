@@ -1,5 +1,5 @@
 # Premium PHP Proxy API
-PHP Proxy Loader Backend, Takes a given URL and returns the DATA through a predefined Premium proxy list.   
+PHP Proxy Loader Backend, Takes a given URL and returns the DATA through a predefined Premium proxy list.   The new Auto script will get the proxy from proxy scrape, if a proxy doesn't work it will automatically try the next one until it's found a good proxy.
    
 ### Installation   
 * Download 3 Files (proxyload.php,agents.list,proxy.list)    
